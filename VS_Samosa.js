@@ -188,7 +188,7 @@ sideDishChoiceMint(choiceMint, choiceTomatoSauce, choiceMayonnaise)
 
 function sideDishChoiceMint(Imint, ItomatoSauce, Imayonnaise) {
     console.log(`Do you want ${samosa.sideDish[0].dish}? ( YES , NO )`)
-    isMintNeeded = "yes"
+    isMintNeeded = "no"
     if (isMintNeeded.toLowerCase() === "yes") {
         Imint("MINT")
         sideDishChoiceTomatoSauce(ItomatoSauce, Imayonnaise)
@@ -199,7 +199,7 @@ function sideDishChoiceMint(Imint, ItomatoSauce, Imayonnaise) {
 
 function sideDishChoiceTomatoSauce(ItomatoSauce, Imayonnaise) {
     console.log(`Do you want ${samosa.sideDish[1].dish}? ( YES , NO )`)
-    isTomatoSauceNeeded = "yes"
+    isTomatoSauceNeeded = "no"
     if (isTomatoSauceNeeded.toLowerCase() === "yes") {
         ItomatoSauce("TOMATO SAUCE");
         sideDishChoiceMayonnaise(Imayonnaise)
